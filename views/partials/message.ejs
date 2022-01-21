@@ -1,0 +1,28 @@
+<!-- error_msg 和 success_msg是來自index.js的 -->
+<!-- 如果目前都還沒有錯誤或成功訊息的話，就先不顯示，反之則顯示我們想傳達的錯誤、成功訊息 -->
+
+<% if (error !="" ) { %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>
+            <%= error %>
+        </strong>
+    </div>
+    <% } %>
+        <!-- break -->
+
+        <% if (error_msg !="" ){ %>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>
+                    <%= error_msg %>
+                </strong>
+            </div>
+            <% } %>
+
+                <!-- break -->
+                <% if (success_msg !="" ){ %>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>
+                            <%= success_msg %>
+                        </strong>
+                    </div>
+                    <% } %>
